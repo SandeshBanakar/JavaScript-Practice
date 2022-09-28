@@ -1,0 +1,32 @@
+<!-- A program to include SET TIME OUT function to display 
+    message or to display an alert message onclick -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Set Time Out</title>
+    </head>
+
+    <body>
+        <button type="button" onclick="timeout()">Submit</button>
+    </body>
+
+    <script>
+        function timeout() {
+            setTimeout (
+                function () {
+                    // alert("Hi");
+                    document.write("Hello Sandesh Banakar!")
+                },
+                2000
+            )
+        }
+    </script>
+</html>
+
+<!-- This function stops after displaying the message or transforming the button 
+    to the message written -->

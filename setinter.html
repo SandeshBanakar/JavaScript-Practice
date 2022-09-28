@@ -1,0 +1,32 @@
+<!-- A program to include an interval to display an alert message in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Interval and Timeout</title>
+    </head>
+
+    <body>
+        <button type="button" onclick="interv()">Submit</button>
+    </body>
+
+    <script>
+        function interv() {
+            // alert("Hello Sandesh Banakar!");
+
+            setInterval (
+                function () {
+                    alert("Hello Sandesh Banakar!");
+                },
+                5000
+            )
+        }
+    </script>
+</html>
+
+<!-- We can introduce a bug using this I guess. As the alert message gets displayed every 5 seconds.
+Here 5000 ms = 5000 milli seconds = 5 seconds -->
